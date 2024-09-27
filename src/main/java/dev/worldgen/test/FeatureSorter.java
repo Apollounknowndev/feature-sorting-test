@@ -110,6 +110,8 @@ public class FeatureSorter {
     }
 
     private static void exportBiomes(List<RegistryEntry<Biome>> biomes) {
+        if (!TestMod.exportSortedBiomes) return;
+
         if (exported) return;
 
         Exporter exporter = new Exporter("sorted_biomes");
@@ -123,6 +125,8 @@ public class FeatureSorter {
     }
 
     private static void exportFeaturesToNextFeatures(Map<IndexedFeature, Set<IndexedFeature>> featureToNextFeatures) {
+        if (!TestMod.exportFeaturesToNextFeatures) return;
+
         if (exported) return;
 
         Exporter exporter = new Exporter("features_to_next_features");

@@ -41,6 +41,8 @@ public class ChunkGeneratorMixin {
 
     @Inject(method = "generateFeatures", at = @At("HEAD"))
     private void output(StructureWorldAccess world, Chunk chunk, StructureAccessor structureAccessor, CallbackInfo ci) {
+        if (!TestMod.exportSortedFeatures) return;
+
         // Hack to prevent the feature list from being exported every time a chunk is generated
         if (exported) return;
 
