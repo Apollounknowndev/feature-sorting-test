@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.worldgen.test.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ChunkGeneratorMixin",
+    "PlacedFeatureIndexerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
