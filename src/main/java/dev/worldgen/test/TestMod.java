@@ -18,8 +18,14 @@ public class TestMod implements ModInitializer {
 
 	/**
 	 * Whether the sorted list of placed features should be exported.
+	 * Running multiple times should show a consistent order, even with features without an explicit defined order in json (e.g. `disk_sand` and `disk_grass`)
 	 */
 	public boolean exportSortedFeatures = true;
+
+	/**
+	 * Whether the list of features to next features should be exported.
+	 * When features are sorted, the features that come after it in each biome json are saved to a list. This setting exports that list.
+	 */
 	public boolean exportFeaturesToNextFeatures = true;
 
 	@Override

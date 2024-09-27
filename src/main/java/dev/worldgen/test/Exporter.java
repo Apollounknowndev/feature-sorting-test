@@ -10,6 +10,9 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Helper class for exporting files.
+ */
 public class Exporter {
     private final Path path;
     private final List<String> lines = new ArrayList<>();
