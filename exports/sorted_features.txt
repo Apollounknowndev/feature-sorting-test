@@ -89,14 +89,19 @@
    - minecraft:flower_warm
    - minecraft:patch_grass_jungle
    - minecraft:patch_grass_savanna
+   - minecraft:pale_garden_vegetation
+   - minecraft:pale_moss_patch
+   - minecraft:pale_garden_flowers
+   - minecraft:flower_pale_garden
    - minecraft:dark_forest_vegetation
    - minecraft:flower_forest_flowers
    - minecraft:trees_flower_forest
    - minecraft:flower_flower_forest
    - minecraft:forest_flowers
+   - minecraft:wildflowers_birch_forest
    - minecraft:birch_tall
    - minecraft:trees_birch
-   - minecraft:trees_birch_and_oak
+   - minecraft:trees_birch_and_oak_leaf_litter
    - minecraft:patch_tall_grass_2
    - minecraft:lush_caves_ceiling_vegetation
    - minecraft:cave_vines
@@ -106,13 +111,10 @@
    - minecraft:spore_blossom
    - minecraft:classic_vines_cave_feature
    - minecraft:patch_sunflower
-   - minecraft:trees_plains
-   - minecraft:flower_plains
-   - minecraft:patch_grass_plain
-   - minecraft:flower_cherry
-   - minecraft:trees_cherry
+   - minecraft:patch_grass_meadow
    - minecraft:flower_meadow
    - minecraft:trees_meadow
+   - minecraft:wildflowers_meadow
    - minecraft:trees_windswept_forest
    - minecraft:patch_large_fern
    - minecraft:trees_old_growth_pine_taiga
@@ -125,6 +127,12 @@
    - minecraft:trees_swamp
    - minecraft:flower_swamp
    - minecraft:trees_water
+   - minecraft:patch_bush
+   - minecraft:trees_plains
+   - minecraft:flower_plains
+   - minecraft:patch_grass_plain
+   - minecraft:flower_cherry
+   - minecraft:trees_cherry
    - minecraft:flower_default
    - minecraft:patch_grass_taiga
    - minecraft:patch_grass_forest
@@ -137,37 +145,42 @@
    - minecraft:brown_mushroom_swamp
    - minecraft:red_mushroom_swamp
    - minecraft:patch_grass_badlands
+   - minecraft:patch_dry_grass_desert
    - minecraft:patch_dead_bush_2
+   - minecraft:patch_dry_grass_badlands
    - minecraft:patch_dead_bush_badlands
    - minecraft:brown_mushroom_normal
    - minecraft:red_mushroom_normal
    - minecraft:patch_sugar_cane_desert
    - minecraft:patch_sugar_cane_badlands
+   - minecraft:patch_leaf_litter
    - minecraft:patch_sugar_cane_swamp
    - minecraft:mushroom_island_vegetation
    - minecraft:brown_mushroom_taiga
    - minecraft:red_mushroom_taiga
-   - minecraft:patch_sugar_cane
    - minecraft:patch_pumpkin
-   - minecraft:seagrass_river
    - minecraft:patch_cactus_desert
    - minecraft:patch_cactus_decorated
+   - minecraft:patch_firefly_bush_swamp
+   - minecraft:patch_firefly_bush_near_water_swamp
+   - minecraft:seagrass_swamp
+   - minecraft:patch_sugar_cane
+   - minecraft:patch_firefly_bush_near_water
+   - minecraft:seagrass_river
    - minecraft:vines
    - minecraft:patch_melon_sparse
    - minecraft:patch_melon
    - minecraft:patch_berry_common
    - minecraft:patch_berry_rare
-   - minecraft:seagrass_swamp
    - minecraft:warm_ocean_vegetation
    - minecraft:seagrass_warm
    - minecraft:sea_pickle
    - minecraft:seagrass_deep_warm
+   - minecraft:kelp_warm
    - minecraft:seagrass_normal
    - minecraft:seagrass_deep
    - minecraft:seagrass_cold
    - minecraft:seagrass_deep_cold
-   - minecraft:seagrass_simple
-   - minecraft:kelp_warm
    - minecraft:kelp_cold
 
 - top_layer_modification

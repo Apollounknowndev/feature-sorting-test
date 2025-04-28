@@ -190,7 +190,7 @@ minecraft:spring_lava_frozen
 
 minecraft:glow_lichen
 - minecraft:mushroom_island_vegetation
-- minecraft:patch_sugar_cane
+- minecraft:patch_pumpkin
 - minecraft:trees_water
 - minecraft:flower_default
 - minecraft:patch_grass_badlands
@@ -205,6 +205,7 @@ minecraft:glow_lichen
 - minecraft:forest_flowers
 - minecraft:flower_forest_flowers
 - minecraft:dark_forest_vegetation
+- minecraft:pale_garden_vegetation
 - minecraft:patch_tall_grass
 - minecraft:bamboo_light
 - minecraft:trees_badlands
@@ -220,12 +221,19 @@ minecraft:brown_mushroom_taiga
 - minecraft:red_mushroom_taiga
 
 minecraft:red_mushroom_taiga
-- minecraft:patch_sugar_cane
-
-minecraft:patch_sugar_cane
 - minecraft:patch_pumpkin
 
 minecraft:patch_pumpkin
+- minecraft:patch_sugar_cane
+- minecraft:patch_firefly_bush_swamp
+- minecraft:patch_cactus_decorated
+- minecraft:patch_cactus_desert
+- minecraft:freeze_top_layer
+
+minecraft:patch_sugar_cane
+- minecraft:patch_firefly_bush_near_water
+
+minecraft:patch_firefly_bush_near_water
 - minecraft:seagrass_deep_cold
 - minecraft:seagrass_cold
 - minecraft:seagrass_deep
@@ -233,17 +241,15 @@ minecraft:patch_pumpkin
 - minecraft:seagrass_deep_warm
 - minecraft:seagrass_warm
 - minecraft:warm_ocean_vegetation
-- minecraft:seagrass_swamp
 - minecraft:patch_berry_rare
 - minecraft:patch_berry_common
 - minecraft:vines
-- minecraft:patch_cactus_decorated
-- minecraft:patch_cactus_desert
 - minecraft:seagrass_river
 - minecraft:freeze_top_layer
 
 minecraft:trees_water
 - minecraft:flower_default
+- minecraft:patch_bush
 
 minecraft:flower_default
 - minecraft:patch_grass_badlands
@@ -254,39 +260,36 @@ minecraft:flower_default
 
 minecraft:patch_grass_badlands
 - minecraft:brown_mushroom_normal
-- minecraft:patch_dead_bush_badlands
-- minecraft:patch_dead_bush_2
+- minecraft:patch_dry_grass_badlands
+- minecraft:patch_dry_grass_desert
 
 minecraft:brown_mushroom_normal
 - minecraft:red_mushroom_normal
 
 minecraft:red_mushroom_normal
-- minecraft:patch_sugar_cane
+- minecraft:patch_pumpkin
 - minecraft:patch_sugar_cane_swamp
+- minecraft:patch_leaf_litter
 - minecraft:patch_sugar_cane_badlands
 - minecraft:patch_sugar_cane_desert
 
 minecraft:seagrass_deep_cold
-- minecraft:seagrass_simple
-
-minecraft:seagrass_simple
 - minecraft:kelp_cold
-- minecraft:kelp_warm
 
 minecraft:kelp_cold
 - minecraft:freeze_top_layer
 
 minecraft:seagrass_cold
-- minecraft:seagrass_simple
+- minecraft:kelp_cold
 
 minecraft:seagrass_deep
-- minecraft:seagrass_simple
+- minecraft:kelp_cold
 
 minecraft:seagrass_normal
-- minecraft:seagrass_simple
+- minecraft:kelp_cold
 
 minecraft:seagrass_deep_warm
-- minecraft:seagrass_simple
+- minecraft:kelp_warm
 
 minecraft:kelp_warm
 - minecraft:freeze_top_layer
@@ -328,7 +331,14 @@ minecraft:red_mushroom_swamp
 minecraft:patch_sugar_cane_swamp
 - minecraft:patch_pumpkin
 
+minecraft:patch_firefly_bush_swamp
+- minecraft:patch_firefly_bush_near_water_swamp
+
+minecraft:patch_firefly_bush_near_water_swamp
+- minecraft:seagrass_swamp
+
 minecraft:seagrass_swamp
+- minecraft:patch_firefly_bush_near_water
 - minecraft:freeze_top_layer
 
 minecraft:trees_mangrove
@@ -338,10 +348,14 @@ minecraft:trees_snowy
 - minecraft:flower_default
 
 minecraft:trees_windswept_hills
+- minecraft:patch_bush
+
+minecraft:patch_bush
 - minecraft:flower_default
+- minecraft:trees_plains
 
 minecraft:trees_grove
-- minecraft:patch_sugar_cane
+- minecraft:patch_pumpkin
 
 minecraft:patch_large_fern
 - minecraft:trees_taiga
@@ -358,14 +372,16 @@ minecraft:patch_berry_rare
 - minecraft:freeze_top_layer
 
 minecraft:trees_windswept_forest
-- minecraft:flower_default
+- minecraft:patch_bush
 
 minecraft:patch_berry_common
 - minecraft:freeze_top_layer
 
 minecraft:patch_tall_grass_2
+- minecraft:patch_bush
 - minecraft:trees_plains
 - minecraft:patch_grass_plain
+- minecraft:patch_grass_meadow
 - minecraft:patch_sunflower
 - minecraft:lush_caves_ceiling_vegetation
 
@@ -377,25 +393,30 @@ minecraft:flower_plains
 
 minecraft:patch_grass_plain
 - minecraft:brown_mushroom_normal
-- minecraft:flower_meadow
 - minecraft:flower_cherry
+
+minecraft:patch_grass_meadow
+- minecraft:flower_meadow
 
 minecraft:flower_meadow
 - minecraft:trees_meadow
 
 minecraft:trees_meadow
+- minecraft:wildflowers_meadow
+
+minecraft:wildflowers_meadow
 - minecraft:freeze_top_layer
 
 minecraft:forest_flowers
 - minecraft:flower_default
-- minecraft:trees_birch_and_oak
-- minecraft:trees_birch
-- minecraft:birch_tall
+- minecraft:trees_birch_and_oak_leaf_litter
+- minecraft:wildflowers_birch_forest
 
-minecraft:trees_birch_and_oak
-- minecraft:flower_default
+minecraft:trees_birch_and_oak_leaf_litter
+- minecraft:patch_bush
 
 minecraft:patch_grass_forest
+- minecraft:patch_pumpkin
 - minecraft:brown_mushroom_normal
 
 minecraft:trees_old_growth_spruce_taiga
@@ -419,11 +440,30 @@ minecraft:trees_flower_forest
 minecraft:flower_flower_forest
 - minecraft:patch_grass_badlands
 
+minecraft:wildflowers_birch_forest
+- minecraft:trees_birch
+- minecraft:birch_tall
+
 minecraft:trees_birch
-- minecraft:flower_default
+- minecraft:patch_bush
 
 minecraft:dark_forest_vegetation
 - minecraft:forest_flowers
+
+minecraft:patch_leaf_litter
+- minecraft:patch_pumpkin
+
+minecraft:pale_garden_vegetation
+- minecraft:pale_moss_patch
+
+minecraft:pale_moss_patch
+- minecraft:pale_garden_flowers
+
+minecraft:pale_garden_flowers
+- minecraft:flower_pale_garden
+
+minecraft:flower_pale_garden
+- minecraft:patch_grass_forest
 
 minecraft:patch_tall_grass
 - minecraft:trees_savanna
@@ -454,6 +494,9 @@ minecraft:vines
 minecraft:patch_melon
 - minecraft:freeze_top_layer
 
+minecraft:patch_dry_grass_badlands
+- minecraft:patch_dead_bush_badlands
+
 minecraft:patch_dead_bush_badlands
 - minecraft:brown_mushroom_normal
 
@@ -461,7 +504,10 @@ minecraft:patch_sugar_cane_badlands
 - minecraft:patch_pumpkin
 
 minecraft:patch_cactus_decorated
-- minecraft:freeze_top_layer
+- minecraft:patch_firefly_bush_near_water
+
+minecraft:patch_dry_grass_desert
+- minecraft:patch_dead_bush_2
 
 minecraft:patch_dead_bush_2
 - minecraft:brown_mushroom_normal
@@ -485,7 +531,7 @@ minecraft:patch_sunflower
 - minecraft:trees_plains
 
 minecraft:birch_tall
-- minecraft:flower_default
+- minecraft:patch_bush
 
 minecraft:trees_sparse_jungle
 - minecraft:flower_warm
