@@ -1,7 +1,6 @@
 package dev.worldgen.test.mixin;
 
 import dev.worldgen.test.Exporter;
-import dev.worldgen.test.FeatureSorter;
 import dev.worldgen.test.TestMod;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -23,14 +22,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.function.Supplier;
 
 @Mixin(ChunkGenerator.class)
 public class ChunkGeneratorMixin {
     @Unique
-    private static final RegistryKey<PlacedFeature> UNREGISTERED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.ofVanilla("unregistered"));
+    private static final RegistryKey<PlacedFeature> UNREGISTERED = RegistryKey.of(RegistryKeys.PLACED_FEATURE,
+            new Identifier("minecraft:unregistered"));
 
     @Unique
     private static boolean exported = false;
