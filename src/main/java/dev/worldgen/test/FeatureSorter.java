@@ -103,7 +103,8 @@ public class FeatureSorter {
         for(int i = 0; i < steps; ++i) {
             int step = i;
             List<PlacedFeature> list4 = list.stream().filter((feature) -> feature.step() == step).map(IndexedFeature::feature).map(RegistryEntry::value).collect(Collectors.toList());
-            builder.add(new IndexedFeatures(list4, Util.lastIdentityIndexGetter(list4)));
+            builder.add(
+                    new IndexedFeatures(list4, Util.lastIndexGetter(list4)));
         }
 
         return builder.build();
@@ -151,7 +152,7 @@ public class FeatureSorter {
 
     // PlacedFeature changed to RegistryEntry<PlacedFeature> to preserve key for exporting
     public record IndexedFeature(int featureIndex, int step, RegistryEntry<PlacedFeature> feature) {
-        private static final RegistryKey<PlacedFeature> INLINED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("inlined"));
+        private static final RegistryKey<PlacedFeature> INLINED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier  ("inlined"));
         public String id() {
             return feature.getKey().orElse(INLINED).getValue().toString();
         }
